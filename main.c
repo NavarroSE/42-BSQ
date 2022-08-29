@@ -6,7 +6,7 @@
 /*   By: manavarr <manavarr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 13:20:38 by manavarr          #+#    #+#             */
-/*   Updated: 2022/04/07 13:21:19 by manavarr         ###   ########.fr       */
+/*   Updated: 2022/08/29 13:30:03 by manavarr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -330,7 +330,7 @@ int	*mover_cuadrado2(char **mat, char *buf, int num)
 	return (comprueba2(mat, val, buf));
 }
 
-void	algo(char *buf)
+void	ft_heart(char *buf)
 {
 	char	**mat;
 	int		i;
@@ -368,6 +368,10 @@ int	main(int argc, char **argv)
 		fd = open(argv[1], O_RDONLY);
 		nr_bytes = read(fd, buf, 100000);
 		close(fd);
-		algo(buf);
+		ft_heart
+	(buf);
 	}
 }
+
+//mucha ayuda recibida por pecampos - 42Málaga
+//https://github.com/pejor76
